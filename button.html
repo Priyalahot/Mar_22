@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <style>
+            div{
+                background-color: rgb(248, 230, 248);
+                margin:5%;
+                padding:50px;
+                border: tomato solid 2px;
+            }
+            #innerdiv{
+                border: solid blueviolet 2px;
+                margin:0;
+                margin-bottom: 5px;
+                padding:5px;
+            }
+            button{
+                background-color: rgb(31, 226, 119);
+                padding: 10px;
+                margin: 10px;
+                text-align: center;
+                font-size: 16px;
+                border: rgb(0, 129, 58) solid 3px;
+            }
+            #btn2{background-color:moccasin;}
+            #btn3{background-color:rgb(184, 184, 212);}
+            #btn4{background-color:orange;}
+            #btn5{background-color:orangered;}
+            #btn6{background-color:pink;}
+            #btn7{background-color:rgb(238, 156, 150);}
+            #btn8{background-color:teal;}
+            h1{
+                text-align: center;
+            }
+        </style>
+
+    </head>
+    <body>
+        
+        <div>
+            <h1>Buttons in Html</h1>
+            <div id=innerdiv>
+        
+        <button type="button" onclick="alert('heloo...')">Button</button>
+        <button id=btn2 type="button" autofocus onclick="alert('autofoucs button')">Autofoucus</button>
+        <button id=btn3 type="button" disabled>disabled button</button>
+        <h3>Form button</h3>
+        <form action="/button.html" method="get" id="form1">
+            <label for="name">Enter Name</label><br>
+            <input type="text" name="name" id="name">
+        </form>
+        <button id=btn3 type="submit" form="form1" value="submit">Submit</button>
+    </div>
+
+    <div id=innerdiv>
+        <h3>Formaction button</h3>
+        <form action="/button.html" method="get">
+        <label for="name">Enter name</label><br>
+        <input type="text" id="name" name="name"><br>
+        <button id=btn4 type="submit" value="submit">Submit</button>
+        <button id=btn5 type="submit" formaction="/cssdemo.html">Submit to another page</button>
+    </div>
+
+        <div id=innerdiv>
+
+        <h3>Formtarget Attribute</h3>
+        <form action="/button.html" method="get">
+            <label for="name">Enter name</label><br>
+            <input type="text" id="name" name="name"><br>
+            <button id=btn6 type="submit">Submit</button>
+            <button id=btn7 type="submit" formtarget="_blank">New window</button>
+        </form>
+
+        </form>
+    </div>
+    </div>
+    </body>
+</html>
